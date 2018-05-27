@@ -1,0 +1,64 @@
+.tabbrowser-tab:not(:hover) .tab-close-button{ display:none; }
+.tabbrowser-tab:not([pinned]):hover .tab-close-button{ display:block !important; }
+
+
+.tabbrowser-tab:not([pinned]):hover  .tab-icon-image {
+  display: none !important;
+}
+
+.tabbrowser-tab:hover  .tab-throbber,
+.tabbrowser-tab:hover  .tab-icon-image,
+.tabbrowser-tab:hover .tab-sharing-icon-overlay,
+.tabbrowser-tab:hover  .tab-icon-overlay,
+.tabbrowser-tab:hover  .tab-label-container,
+.tabbrowser-tab:hover  .tab-icon-sound {
+   -moz-box-ordinal-group: 2 !important;
+}
+
+.tabbrowser-tab .tab-close-button {
+  margin-left: -2px !important;
+  margin-right: 2px !important;
+}
+
+/* Remove Page Actions Menu */
+#pageActionButton {
+  display: none !important;
+}
+
+#PanelUI-button {
+    border-inline-start: 0px !important;
+}
+
+/*
+ * Makes the address bar and search bar borderless. 
+ * Use the default white theme for an Edge-like look or in VivaldiFox with page colors applied 
+ * on toolbar fields for a seamless one-color look.
+ *
+ * Contributor(s): Madis0
+ */
+
+#urlbar, .searchbar-textbox {
+  
+  box-shadow: none !important;
+}
+
+.urlbar-history-dropmarker{
+  display: none !important;
+}
+
+/* remove the dark circle around back button, and make back button and forward button
+the same size */
+#back-button:not(:hover),
+#back-button:not(:hover) > .toolbarbutton-icon {
+background: transparent !important;
+border: none !important;
+box-shadow: none !important;
+width: 32px !important;
+}
+
+#back-button:hover,
+#back-button:hover > .toolbarbutton-icon {
+border: none !important;
+border-radius: 2px !important;
+  width: 32px !important;
+}
