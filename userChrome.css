@@ -1,3 +1,4 @@
+/* Show tab close button on favicon hover */
 .tabbrowser-tab:not(:hover) .tab-close-button{ display:none; }
 .tabbrowser-tab:not([pinned]):hover .tab-close-button{ display:block !important; }
 
